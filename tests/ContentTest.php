@@ -432,7 +432,7 @@ final class ContentTest extends TestCase
              * Constructor.
              *
              * @param  null|string                   $content Text to be processed
-             * @param  \Navindex\SimpleConfig\Config $config  Configuration settings
+             * @param  Config $config  Configuration settings
              * @return void
              */
             public function __construct(?string $content, Config $config)

@@ -97,8 +97,9 @@ class Formatter
      * @param  null|mixed[] $config Associative array of option names and values
      * @return void
      */
-    public function __construct(?array $config = null)
+    public function __construct(?array $config = [])
     {
+        $config = $config ?? [];
         $this->config = new Config($config);
     }
 
@@ -112,7 +113,7 @@ class Formatter
     {
         $this->config = ($config instanceof Config)
             ? $config
-            : new Config($config);
+            : new Config($config ?? []);
 
         return $this;
     }
@@ -134,7 +135,7 @@ class Formatter
      */
     public function getConfigArray(): array
     {
-        return (null === $this->config) ? [] : $this->config->all();
+        return $this->config->all();
     }
 
     /**
