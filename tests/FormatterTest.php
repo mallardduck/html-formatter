@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Navindex\HtmlFormatter\Tests;
 
 use Iterator;
+use Navindex\HtmlFormatter\Config;
 use Navindex\HtmlFormatter\Formatter;
-use Navindex\SimpleConfig\Config;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -18,19 +18,19 @@ final class FormatterTest extends TestCase
      * @dataProvider providerConstructor
      *
      * @param  null|mixed[]                  $config
-     * @param  \Navindex\SimpleConfig\Config $expected
+     * @param  Config $expected
      * @return void
      */
     public function testConstructor(?array $config, Config $expected)
     {
         $f = new Formatter($config);
-        $this->assertSame($expected->toArray(), $f->getConfig()->toArray());
+        $this->assertSame($expected->all(), $f->getConfig()->all());
     }
 
     /**
      * @dataProvider providerConfig
      *
-     * @param  null|\Navindex\SimpleConfig\Config|mixed[] $config
+     * @param  null|Config|mixed[] $config
      * @param  mixed[]                                    $expected
      * @return void
      */
@@ -110,11 +110,9 @@ final class FormatterTest extends TestCase
             ],
         ];
 
-        yield [null, []];
         yield [[], []];
         yield [new Config(), []];
         yield [new Config([]), []];
-        yield [new Config(null), []];
         yield [$config, $config];
     }
 
