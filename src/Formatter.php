@@ -89,7 +89,7 @@ class Formatter
      *
      * @var Config
      */
-    protected $config;
+    protected Config $config;
 
     /**
      * Constructor.
@@ -99,9 +99,7 @@ class Formatter
      */
     public function __construct(?array $config = null)
     {
-        if ($config !== null) {
-            $this->config = new Config($config);
-        }
+        $this->config = new Config($config);
     }
 
     /**
