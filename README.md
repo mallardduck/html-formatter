@@ -1,6 +1,6 @@
 # HTML Formatter [![Latest Version](https://img.shields.io/github/release/mallardduck/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/mallardduck/html-formatter/master/CHANGELOG.md)
 
-[![Unit tests](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml)
+[![Unit tests](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml/badge.svg)](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml)
 [![Code analysis](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml)
 [![Coverage Status](https://coveralls.io/repos/github/mallardduck/html-formatter/badge.svg?branch=main)](https://coveralls.io/github/mallardduck/html-formatter?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
