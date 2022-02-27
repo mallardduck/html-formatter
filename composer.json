@@ -34,7 +34,7 @@
         "phpstan/phpstan": "^1.2.0",
         "phpunit/phpunit": "^9.5.16",
         "spatie/phpunit-snapshot-assertions": "^4.2",
-        "symfony/var-dumper": "^6.0"
+        "symfony/var-dumper": "^5.0 || ^6.0"
     },
     "replace": {
         "navindex/html-formatter": "*"
