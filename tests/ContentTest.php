@@ -404,7 +404,11 @@ final class ContentTest extends TestCase
     public function testIndent(string $html)
     {
         $hc = new Content($html, new Config($this->config));
-        $this->assertMatchesSnapshot((string) $hc->indent());
+        $rendered = (string) $hc->indent();
+        if (PHP_OS_FAMILY === "Windows") {
+            $rendered = str_replace(PHP_EOL, "\n", $rendered);
+        }
+        $this->assertMatchesSnapshot($rendered);
     }
 
     /**

@@ -54,7 +54,11 @@ final class FormatterTest extends TestCase
     public function testBeautify(string $html)
     {
         $f = new Formatter();
-        $this->assertMatchesHtmlSnapshot($f->beautify($html));
+        $beautified = $f->beautify($html);
+        if (PHP_OS_FAMILY === "Windows") {
+            $beautified = str_replace(PHP_EOL, "\n", $beautified);
+        }
+        $this->assertMatchesHtmlSnapshot($beautified);
     }
 
     /**
@@ -67,7 +71,11 @@ final class FormatterTest extends TestCase
     public function testMinify(string $html)
     {
         $f = new Formatter();
-        $this->assertMatchesHtmlSnapshot($f->minify($html));
+        $minified = $f->minify($html);
+        if (PHP_OS_FAMILY === "Windows") {
+            $minified = str_replace(PHP_EOL, "\n", $minified);
+        }
+        $this->assertMatchesHtmlSnapshot($minified);
     }
 
     /**
