@@ -1,8 +1,0 @@
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g class="a">
-        <path d="m30.286 20.4727h-4.264v-19.8613h4.264z"/>
-        <path d="m33.8616 20.472v-19.8613h4.264v16.56h8.6107v3.3013z"/>
-    </g>
-</svg>
