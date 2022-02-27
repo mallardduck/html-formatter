@@ -1,9 +1,9 @@
-# HTML Formatter [![Latest Version](https://img.shields.io/github/release/navindex/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/navindex/html-formatter/master/CHANGELOG.md)
+# HTML Formatter [![Latest Version](https://img.shields.io/github/release/mallardduck/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/mallardduck/html-formatter/master/CHANGELOG.md)
 
-[![Unit tests](https://github.com/navindex/html-formatter/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/navindex/html-formatter/actions/workflows/test.yml)
-[![Code analysis](https://github.com/navindex/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/navindex/html-formatter/actions/workflows/analysis.yml)
-[![Build Status](https://img.shields.io/travis/navindex/html-formatter?branch=master)](https://app.travis-ci.com/navindex/html-formatter)
-[![Coverage Status](https://coveralls.io/repos/github/navindex/html-formatter/badge.svg?branch=master)](https://coveralls.io/github/navindex/html-formatter?branch=master)
+[![Unit tests](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml)
+[![Code analysis](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml)
+[![Build Status](https://img.shields.io/travis/mallardduck/html-formatter?branch=main)](https://app.travis-ci.com/mallardduck/html-formatter)
+[![Coverage Status](https://coveralls.io/repos/github/mallardduck/html-formatter/badge.svg?branch=main)](https://coveralls.io/github/mallardduck/html-formatter?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 ## 1. What Is It
@@ -28,7 +28,7 @@ If you need to format your code in the development environment, beware that earl
 This package can be installed through [Composer](https://getcomposer.org/).
 
 ```bash
-composer require navindex/html-formatter
+composer require mallardduck/html-formatter
 ```
 
 ## 4. Usage
