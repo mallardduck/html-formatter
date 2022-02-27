@@ -21,10 +21,16 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:mallardduck/simple-config.git"
+        }
+    ],
     "require": {
         "php": "^7.3|^8.0",
         "ext-mbstring": "*",
-        "navindex/simple-config": "^0.2.0"
+        "navindex/simple-config": "dev-improve-php81-support"
     },
     "require-dev": {
         "larapack/dd": "^1.1",
