@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace MallardDuck\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Helper;
-use Navindex\HtmlFormatter\Pattern;
+use MallardDuck\HtmlFormatter\Helper;
+use MallardDuck\HtmlFormatter\Pattern;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Helper
+ * @covers \MallardDuck\HtmlFormatter\Helper
  *
- * @uses \Navindex\HtmlFormatter\Pattern
+ * @uses \MallardDuck\HtmlFormatter\Pattern
  */
 final class HelperTest extends TestCase
 {

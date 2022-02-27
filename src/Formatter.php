@@ -1,6 +1,6 @@
 <?php
 
-namespace Navindex\HtmlFormatter;
+namespace MallardDuck\HtmlFormatter;
 
 /**
  * Formatter class.

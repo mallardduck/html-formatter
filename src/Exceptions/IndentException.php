@@ -1,6 +1,6 @@
 <?php
 
-namespace Navindex\HtmlFormatter\Exceptions;
+namespace MallardDuck\HtmlFormatter\Exceptions;
 
 use RuntimeException;
 

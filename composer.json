@@ -1,8 +1,8 @@
 {
-    "name": "navindex/html-formatter",
-    "type": "library",
+    "name": "mallardduck/html-formatter",
     "description": "HTML beautifier and minifier library for development and testing.",
-    "homepage": "https://github.com/navindex/html-formatter",
+    "license": "MIT",
+    "type": "library",
     "keywords": [
         "beautify",
         "format",
@@ -10,7 +10,6 @@
         "indent",
         "minify"
     ],
-    "license": "MIT",
     "authors": [
         {
             "name": "Dan Pock",
@@ -25,25 +24,29 @@
             "role": "OG Developer"
         }
     ],
+    "homepage": "https://github.com/mallardduck/html-formatter",
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-mbstring": "*"
     },
     "require-dev": {
+        "php-coveralls/php-coveralls": "^2.5",
         "phpstan/phpstan": "^1.2.0",
         "phpunit/phpunit": "^9.5.16",
-        "php-coveralls/php-coveralls": "^2.5",
-        "symfony/var-dumper": "^6.0",
-        "spatie/phpunit-snapshot-assertions": "^4.2"
+        "spatie/phpunit-snapshot-assertions": "^4.2",
+        "symfony/var-dumper": "^6.0"
+    },
+    "replace": {
+        "navindex/html-formatter": "*"
     },
     "autoload": {
         "psr-4": {
-            "Navindex\\HtmlFormatter\\": "src/"
+            "MallardDuck\\HtmlFormatter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Navindex\\HtmlFormatter\\Tests\\": "tests/"
+            "MallardDuck\\HtmlFormatter\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -55,11 +58,5 @@
         "check": "Run static analysis",
         "test": "Run unit tests",
         "testonly": "Run a single test"
-    },
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/navindex"
-        }
-    ]
+    }
 }

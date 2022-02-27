@@ -34,7 +34,7 @@ composer require navindex/html-formatter
 ## 4. Usage
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use MallardDuck\HtmlFormatter\Formatter;
 
 $input = 'This is your HTML code.';
 $formatter = new Formatter();
@@ -87,7 +87,7 @@ All other elements are treated as block.
 You can set additional inline elements by adding them to the `inline.tag` option.
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use MallardDuck\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $config = $formatter->getConfig();
@@ -113,7 +113,7 @@ All other elements require closing tag.
 You can set additional self-closing elements by adding them to the `self-closing.tag` option.
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use MallardDuck\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $formatter->setConfig($formatter->getConfig()->append('self-closing.tag', ['foo', 'bar']));
@@ -141,7 +141,7 @@ There settings for all the formatted tags are the following:
 You can also change the settings for a specific tag. For example, disabling the `cleanup-empty` setting for the `script` tag looks like this:
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use MallardDuck\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $config = $formatter->getConfig();

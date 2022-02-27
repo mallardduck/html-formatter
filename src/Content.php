@@ -1,8 +1,8 @@
 <?php
 
-namespace Navindex\HtmlFormatter;
+namespace MallardDuck\HtmlFormatter;
 
-use Navindex\HtmlFormatter\Exceptions\IndentException;
+use MallardDuck\HtmlFormatter\Exceptions\IndentException;
 
 /**
  * HTML content.
@@ -84,7 +84,7 @@ class Content
     /**
      * Logger instance.
      *
-     * @var \Navindex\HtmlFormatter\Logger|null
+     * @var \MallardDuck\HtmlFormatter\Logger|null
      */
     protected $logger;
 
@@ -439,7 +439,7 @@ class Content
      *
      * @return self
      *
-     * @throws \Navindex\HtmlFormatter\Exceptions\IndentException
+     * @throws \MallardDuck\HtmlFormatter\Exceptions\IndentException
      */
     public function indent(): self
     {

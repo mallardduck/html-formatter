@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace MallardDuck\HtmlFormatter\Tests;
 
 use ArrayIterator;
 use Iterator;
-use Navindex\HtmlFormatter\Config;
+use MallardDuck\HtmlFormatter\Config;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Config
+ * @covers \MallardDuck\HtmlFormatter\Config
  */
 final class ConfigTest extends TestCase
 {

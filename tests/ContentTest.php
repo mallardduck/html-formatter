@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace MallardDuck\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Config;
-use Navindex\HtmlFormatter\Content;
-use Navindex\HtmlFormatter\Exceptions\IndentException;
+use MallardDuck\HtmlFormatter\Config;
+use MallardDuck\HtmlFormatter\Content;
+use MallardDuck\HtmlFormatter\Exceptions\IndentException;
 use PHPUnit\Framework\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 /**
- * @covers \Navindex\HtmlFormatter\Content
+ * @covers \MallardDuck\HtmlFormatter\Content
  */
 final class ContentTest extends TestCase
 {

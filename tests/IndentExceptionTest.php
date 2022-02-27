@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace MallardDuck\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Exceptions\IndentException;
+use MallardDuck\HtmlFormatter\Exceptions\IndentException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Exceptions\IndentException
+ * @covers \MallardDuck\HtmlFormatter\Exceptions\IndentException
  */
 final class IndentExceptionTest extends TestCase
 {

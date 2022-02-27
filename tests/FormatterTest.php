@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace MallardDuck\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Config;
-use Navindex\HtmlFormatter\Formatter;
+use MallardDuck\HtmlFormatter\Config;
+use MallardDuck\HtmlFormatter\Formatter;
 use PHPUnit\Framework\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 /**
- * @covers \Navindex\HtmlFormatter\Formatter
+ * @covers \MallardDuck\HtmlFormatter\Formatter
  */
 final class FormatterTest extends TestCase
 {
