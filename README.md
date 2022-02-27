@@ -2,7 +2,6 @@
 
 [![Unit tests](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/mallardduck/html-formatter/actions/workflows/test.yml)
 [![Code analysis](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/mallardduck/html-formatter/actions/workflows/analysis.yml)
-[![Build Status](https://img.shields.io/travis/mallardduck/html-formatter?branch=main)](https://app.travis-ci.com/mallardduck/html-formatter)
 [![Coverage Status](https://coveralls.io/repos/github/mallardduck/html-formatter/badge.svg?branch=main)](https://coveralls.io/github/mallardduck/html-formatter?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
