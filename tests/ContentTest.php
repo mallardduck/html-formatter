@@ -9,12 +9,15 @@ use Navindex\HtmlFormatter\Config;
 use Navindex\HtmlFormatter\Content;
 use Navindex\HtmlFormatter\Exceptions\IndentException;
 use PHPUnit\Framework\TestCase;
+use Spatie\Snapshots\MatchesSnapshots;
 
 /**
  * @covers \Navindex\HtmlFormatter\Content
  */
 final class ContentTest extends TestCase
 {
+    use MatchesSnapshots;
+
     /**
      * Default config to use.
      *
@@ -398,10 +401,10 @@ final class ContentTest extends TestCase
      * @param  string $expected
      * @return void
      */
-    public function testIndent(string $html, string $expected)
+    public function testIndent(string $html)
     {
         $hc = new Content($html, new Config($this->config));
-        $this->assertSame($expected, (string) $hc->indent());
+        $this->assertMatchesSnapshot((string) $hc->indent());
     }
 
     /**
@@ -424,7 +427,7 @@ final class ContentTest extends TestCase
      * @param  string $output
      * @return void
      */
-    public function testIndentException(string $html, string $output)
+    public function testIndentException(string $html)
     {
         $hc = new class($html, new Config($this->config)) extends Content
         {
@@ -1066,16 +1069,6 @@ final class ContentTest extends TestCase
                 <path d="m33.8616 20.472v-19.8613h4.264v16.56h8.6107v3.3013z" /></g>
             </svg>
             INPUT,
-            <<<'OUTPUT'
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g class="a">
-                    <path d="m30.286 20.4727h-4.264v-19.8613h4.264z"/>
-                    <path d="m33.8616 20.472v-19.8613h4.264v16.56h8.6107v3.3013z"/>
-                </g>
-            </svg>
-            OUTPUT,
         ];
         yield [
             <<<'INPUT'
@@ -1091,21 +1084,6 @@ final class ContentTest extends TestCase
                 <a class="  header-brand   order-last " href="http://localhost/dashboard/" >   Dashboard   </a>
                 </body></html>
             INPUT,
-            <<<'OUTPUT'
-            <html lang = "  en_AU">
-                <head>
-                    <meta charset  ="utf-8  ">
-                    <meta http-equiv=   "X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content=" width=device-width,    initial-scale=1,
-                            shrink-to-fit=no">
-                    <meta name="auth" content="1 "
-                            id="auth">
-                </head>
-                <body>
-                    <a class="  header-brand   order-last " href="http://localhost/dashboard/">Dashboard</a>
-                </body>
-            </html>
-            OUTPUT,
         ];
     }
 
