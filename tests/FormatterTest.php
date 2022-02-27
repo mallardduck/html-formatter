@@ -302,7 +302,7 @@ final class FormatterTest extends TestCase
     /**
      * Data provider.
      *
-     * @return \Iterator <int, mixed[]>
+     * @return Iterator <int, mixed[]>
      */
     public function providerMinify(): Iterator
     {
