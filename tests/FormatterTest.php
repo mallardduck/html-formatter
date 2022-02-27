@@ -56,7 +56,7 @@ final class FormatterTest extends TestCase
         $f = new Formatter();
         $beautified = $f->beautify($html);
         if (PHP_OS_FAMILY === "Windows") {
-            $beautified = str_replace(PHP_EOL, "\n", $beautified);
+            $beautified = str_replace("\r\n", "\n", $beautified);
         }
         $this->assertMatchesHtmlSnapshot($beautified);
     }
@@ -73,7 +73,7 @@ final class FormatterTest extends TestCase
         $f = new Formatter();
         $minified = $f->minify($html);
         if (PHP_OS_FAMILY === "Windows") {
-            $minified = str_replace(PHP_EOL, "\n", $minified);
+            $minified = str_replace("\r\n", "\n", $minified);
         }
         $this->assertMatchesHtmlSnapshot($minified);
     }
