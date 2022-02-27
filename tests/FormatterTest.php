@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Navindex\HtmlFormatter\Tests;
 
 use Iterator;
+use Navindex\HtmlFormatter\Config;
 use Navindex\HtmlFormatter\Formatter;
-use Navindex\SimpleConfig\Config;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -18,7 +18,7 @@ final class FormatterTest extends TestCase
      * @dataProvider providerConstructor
      *
      * @param  null|mixed[]                  $config
-     * @param  \Navindex\SimpleConfig\Config $expected
+     * @param  Config $expected
      * @return void
      */
     public function testConstructor(?array $config, Config $expected)
@@ -30,7 +30,7 @@ final class FormatterTest extends TestCase
     /**
      * @dataProvider providerConfig
      *
-     * @param  null|\Navindex\SimpleConfig\Config|mixed[] $config
+     * @param  null|Config|mixed[] $config
      * @param  mixed[]                                    $expected
      * @return void
      */

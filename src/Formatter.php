@@ -2,8 +2,6 @@
 
 namespace Navindex\HtmlFormatter;
 
-use Navindex\SimpleConfig\Config;
-
 /**
  * Formatter class.
  */
@@ -89,7 +87,7 @@ class Formatter
     /**
      * Configuration settings.
      *
-     * @var \Navindex\SimpleConfig\Config
+     * @var Config
      */
     protected $config;
 
@@ -101,15 +99,13 @@ class Formatter
      */
     public function __construct(?array $config = null)
     {
-        if ($config) {
-            $this->config = new Config($config);
-        }
+        $this->config = new Config($config ?? []);
     }
 
     /**
      * Sets the formatter config.
      *
-     * @param  null|\Navindex\SimpleConfig\Config|mixed[] $config Associative array of option names and values
+     * @param  null|Config|mixed[] $config Associative array of option names and values
      * @return self
      */
     public function setConfig($config): self
@@ -124,11 +120,11 @@ class Formatter
     /**
      * Gets the formatter config.
      *
-     * @return \Navindex\SimpleConfig\Config
+     * @return Config
      */
     public function getConfig(): Config
     {
-        return $this->config ?? new Config();
+        return $this->config;
     }
 
     /**
@@ -152,7 +148,7 @@ class Formatter
         $commonConfig = new Config($this->commonConfig);
         $beautifyConfig = $commonConfig->merge($this->beautifyConfig);
 
-        $config = $this->config ?? new Config();
+        $config = $this->config;
         $config->merge($beautifyConfig, Config::MERGE_KEEP);
 
         $html = new Content($input, $config);
@@ -181,7 +177,7 @@ class Formatter
         $commonConfig = new Config($this->commonConfig);
         $minifyConfig = $commonConfig->merge($this->minifyConfig);
 
-        $config = $this->config ?? new Config();
+        $config = $this->config;
         $config->merge($minifyConfig, Config::MERGE_KEEP);
 
         $html = new Content($input, $config);

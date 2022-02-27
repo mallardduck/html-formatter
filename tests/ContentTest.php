@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Navindex\HtmlFormatter\Tests;
 
 use Iterator;
+use Navindex\HtmlFormatter\Config;
 use Navindex\HtmlFormatter\Content;
 use Navindex\HtmlFormatter\Exceptions\IndentException;
-use Navindex\SimpleConfig\Config;
 use PHPUnit\Framework\TestCase;
 
 /**

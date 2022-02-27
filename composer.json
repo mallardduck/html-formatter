@@ -8,29 +8,32 @@
         "format",
         "HTML",
         "indent",
-        "minify",
-        "Navindex",
-        "PHP"
+        "minify"
     ],
     "license": "MIT",
     "authors": [
         {
+            "name": "Dan Pock",
+            "email": "self@danpock.me",
+            "homepage": "https://danpock.me",
+            "role": "Developer"
+        },
+        {
             "name": "Miklos Karpati",
             "email": "mk@navindex.com.au",
             "homepage": "https://www.navindex.com.au",
-            "role": "Developer"
+            "role": "OG Developer"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "ext-mbstring": "*",
-        "navindex/simple-config": "^0.2.0"
+        "php": "^7.4 || ^8.0",
+        "ext-mbstring": "*"
     },
     "require-dev": {
-        "larapack/dd": "^1.1",
-        "phpstan/phpstan": "^0.12.99",
-        "phpunit/phpunit": "^9.5",
-        "php-coveralls/php-coveralls": "^2.4"
+        "phpstan/phpstan": "^1.2.0",
+        "phpunit/phpunit": "^9.5.16",
+        "php-coveralls/php-coveralls": "^2.5",
+        "symfony/var-dumper": "^6.0"
     },
     "autoload": {
         "psr-4": {
