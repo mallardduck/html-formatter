@@ -33,7 +33,7 @@
         "php-coveralls/php-coveralls": "^2.5",
         "phpstan/phpstan": "^1.2.0",
         "phpunit/phpunit": "^9.5.16",
-        "spatie/phpunit-snapshot-assertions": "^4.2",
+        "spatie/phpunit-snapshot-assertions": "^4.2.10",
         "symfony/var-dumper": "^5.0 || ^6.0"
     },
     "replace": {
