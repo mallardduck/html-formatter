@@ -176,7 +176,3 @@ Additional settings for formatted tags are the following:
 ## 7. Credits
 
 Thanks to **[Gajus Kuizinas](https://github.com/gajus)** for originally creating [gajus/dindent](https://github.com/gajus/dindent) and all the other developers who are tirelessly working on it. HTML Formatter was inspired by Dindent.
-
-## 8. About Navindex
-
-Navindex is a web development agency in Melbourne, Australia. You'll find an overview of our cmpany [on our website](https://www.navindex.com.au).
